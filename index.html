@@ -6,22 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
 </head>
 <body>
     <div class="main">
-    <div class="homeAndSearch">
+    <div class="homeAndSearch" id="homeAndSearch">
         <nav>
             <div class="home">
-                <a href="home.html">  <i class="fa-solid fa-house" style="color: #ffffff;"></i> </a>
-                     <label id="home" style="color: #ffffff;" style="margin-left:50px;"><a href="home.html">Home</a></label>
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                     <label id="home" style="color: #ffffff;" style="margin-left:50px;">Home</label>
             </div>
             <br>
-            <div class="search">
-                <a href="search.html"> <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
-            <label id="search" style="color: #ffffff;"><a href="search.html">Search</a></label>
+            <div class="search" id = "searchSymbol">
+               <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            <label id="search" style="color: #ffffff">Search</label>
             </div>
         </nav>
-           
         </div>
         <div class="Yourlibrary">
             <div class="library">
@@ -82,12 +83,12 @@
                     </div> 
                 <br>               
                 </div>
-                <div class="file-container">
+                <div id="file-container" style="visibility: hidden;">
                     <div class="cloud-icon">
                         <img class="cloudImage"src="icons/downloadIcon.png" height="140">
                     </div>
                         <div class="upload-content">
-                        <b><p style="width: 500px;size:10px;padding-right:30px:margin-right:10px">Upload audio files here</p></b>
+                        <b><p style="width: 500px;size:10px;padding-right:30px;margin-right:10px">Upload audio files here</p></b>
                         </div>
                           <div class="upload-space">
                            <input type="file" class="upload-box"accept="audio/*">
@@ -95,9 +96,12 @@
                 </div>              
         </div>
         <nav class="User-LS">
-            <a href="login.html" class="login" style="margin-right:15px">Login</a><a href="signup.html" class="singup">Singup</a>
+            <a href="login.html" class="login" style="margin-right:15px">Login</a><a href="signup.html" class="singup">Signup</a>
         </nav>       
     </div>  
+    <div id="searchBar" class="searchBar" style="visibility:hidden;">
+        <i id = "searchIcon"class="fa-solid fa-magnifying-glass" ></i><input type="text" class="searchInput" placeholder="search your music">
+       </div>
     <script src="index.js"></script>
     <script src="upload.js"></script>
 </body>
